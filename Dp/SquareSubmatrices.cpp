@@ -1,11 +1,13 @@
-#include <bits/stdc++.h>
+#include "iostream"
+#include "vector"
+#include "algorithm"
 
 using namespace std;
 
 class Solution
 {
 public:
-    int countSquares(vector<vector<int>> &matrix)
+    int countSquares(vector<vector<int> > &matrix)
     {
         int m = matrix.size();
         int n = matrix[0].size();
