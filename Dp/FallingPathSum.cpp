@@ -68,7 +68,7 @@ int main()
 
     Solution obj;
 
-    //cout << obj.minFallingPathSum(data)<<endl;
+    cout << obj.minFallingPathSum(data)<<endl;
 
     vector<vector<int>> data2 = {{17,82},{1,-44}};
 
