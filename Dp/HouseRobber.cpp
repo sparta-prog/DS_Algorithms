@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
@@ -10,32 +11,32 @@ Given an integer array nums representing the amount of money of each house, retu
 
 class Solution {
 public:
-    int helper(vector<int> &nums, int i,vector<int> &memo) {
-
-        if(i >= nums.size()) {
-            return 0;
-        }
-
-        if(memo[i] != -1) {
-            return memo[i];
-        }
-
-        int pick = 0, dontPick = 0;
-        pick = nums[i] + helper(nums,i+2,memo);
-
-        dontPick = helper(nums, i + 1,memo);
-        
-        return memo[i] = max(pick,dontPick);
-    }
-
     int rob(vector<int>& nums) {
         int n = nums.size();
 
         if(n == 0)
             return 0;
         
-        vector<int> memo (n, -1);
-        return helper(nums,0,memo);
+        if(n == 1) {
+            return nums[0];
+        }
+
+        if(n == 2){
+            return max(nums[0],nums[1]);
+        }
+
+        int prevPrev = nums[0];
+        int prev = max(nums[0],nums[1]);
+
+        for(int i=2;i<n;i++) {
+            int skip = prev;
+            int steal = prevPrev;
+
+            int curr = max(skip , steal + nums[i]);
+            prevPrev = prev;
+            prev = curr;
+        }
+        return prev;
     }
 };
 
