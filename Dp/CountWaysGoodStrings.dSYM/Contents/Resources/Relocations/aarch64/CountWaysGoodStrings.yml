@@ -1,0 +1,11 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/spartan/Desktop/iv/DS_Algorithms/Dp/CountWaysGoodStrings'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003D68, symSize: 0x6C }
+  - { offsetInCU: 0x2DDE, offset: 0x2DDE, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003D68, symSize: 0x6C }
+  - { offsetInCU: 0x2EDF, offset: 0x2EDF, size: 0x8, addend: 0x0, symName: __ZN8SolutionC1Ev, symObjAddr: 0x6C, symBinAddr: 0x100003DD4, symSize: 0x2C }
+  - { offsetInCU: 0x2F09, offset: 0x2F09, size: 0x8, addend: 0x0, symName: __ZN8Solution16countGoodStringsEiiii, symObjAddr: 0x98, symBinAddr: 0x100003E00, symSize: 0x58 }
+  - { offsetInCU: 0x2F65, offset: 0x2F65, size: 0x8, addend: 0x0, symName: __ZN8SolutionC2Ev, symObjAddr: 0xF0, symBinAddr: 0x100003E58, symSize: 0x20 }
+  - { offsetInCU: 0x2F8F, offset: 0x2F8F, size: 0x8, addend: 0x0, symName: __ZN8Solution4utilEi, symObjAddr: 0x110, symBinAddr: 0x100003E78, symSize: 0x104 }
+...
