@@ -12,7 +12,7 @@ Given an integer array nums representing the amount of money of each house, retu
 class Solution {
 public:
     int rob(vector<int>& nums) {
-        int n = nums.size();
+         int n = nums.size();
 
         if(n == 0)
             return 0;
